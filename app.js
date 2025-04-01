@@ -55,6 +55,10 @@ function check_winner() {
       score_1++;
       reset_game();
       return;
+    } else if (player_0.length + player_1.length == 9) {
+      alert("It's a draw!");
+      reset_game();
+      return;
     }
   }
 }
